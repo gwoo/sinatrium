@@ -6,7 +6,7 @@ use lithium\action\Dispatcher;
 use lithium\action\Response;
 
 Router::connect('/', array(), function($request) {
-	$body = '<h1>Welcome to Sinatirum</h1>';
+	$body = '<h1>Welcome to Sinatrium</h1>';
 	return new Response(compact('body'));
 });
 
