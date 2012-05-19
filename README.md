@@ -1,8 +1,8 @@
-= Sinatrium
+# Sinatrium
 
 A Lithium micro framework.
 
-== Usage
+## Usage
 
 Add routes with closures.
 
