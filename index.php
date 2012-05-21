@@ -10,8 +10,9 @@ Router::connect('/', array(), function($request) {
 	return new Response(compact('body'));
 });
 
-Router::connect('/hello', array(), function($request) {
-	$body = '<h1>Hello World!</h1>';
+Router::connect('/hello/{:name}', array('name' => false), function($request) {
+	$name = ucwords($request->name) ?: 'World';
+	$body = "<h1>Hello {$name}!</h1>";
 	return new Response(compact('body'));
 });
 
